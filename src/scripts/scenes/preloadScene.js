@@ -8,7 +8,7 @@ export default class PreloadScene extends Phaser.Scene {
     this.load.image('sheep', 'assets/img/sheep.png')
     this.load.image('dog', 'assets/img/dog.png')
     this.load.image('fond', 'assets/img/fond.png')
-    this.load.audio('music', 'assets/music.wav')
+    this.load.audio('music', 'assets/img/music.wav')
   }
 
   create() {
