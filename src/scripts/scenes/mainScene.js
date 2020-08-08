@@ -20,6 +20,8 @@ export default class MainScene extends Phaser.Scene {
   }
 
   create () {
+    const music = this.game.sound.add('music')
+    music.play({loop: true})
     this.fond = this.physics.add.sprite(FULL,FULL,'fond');
     this.fond.setPosition(0,0)
     this.fond.setCollideWorldBounds(true)
@@ -76,7 +78,7 @@ export default class MainScene extends Phaser.Scene {
       this.explain.destroy()
     }, 5000)
 
-      setInterval(() => {
+    setInterval(() => {
       this.time -= 1
       this.timeText.text = `Time left: ${this.time}`
     }, 1000) 
